@@ -55,7 +55,7 @@
 	 	echo "<br>md5" .sha1("123456");
 	 	echo "<br>" .substr($a,2,8);//tar về chuỗi từ 2 đến 8
 	 	echo "<br>" .strpos($a,"i");//tìm vị trí của chuỗi
-
+	 	strtoupper() //chuyển đổi một chuỗi thành chữ in Hoa
 	 	strtolower () //chuyển đổi một chuỗi thành chữ thường
 		lcfirst () //chuyển đổi ký tự đầu tiên của chuỗi thành chữ thường
 		ucfirst () //chuyển đổi ký tự đầu tiên của chuỗi thành chữ hoa
