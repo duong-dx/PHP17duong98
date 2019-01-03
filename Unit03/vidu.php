@@ -1,4 +1,4 @@
-<?php 
+ <?php 
 	date_default_timezone_set('Asia/Ho_Chi_Minh');
 	echo time();
 	$int_time=1544529059;
