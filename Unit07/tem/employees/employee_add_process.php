@@ -3,6 +3,7 @@ if (isset($_POST['themnv'])) {
 	$employee_new_code = $_POST['employee_new_code'];
 	$employee_new_name = $_POST['employee_new_name'];
 	$employee_new_address = $_POST['employee_new_address'];
+	$employee_new_birthday = $_POST['employee_new_birthday'];
 	$employee_new_email = $_POST['employee_new_email'];
 	$employee_new_password = $_POST['employee_new_password'];
 	$employee_new_mobile = $_POST['employee_new_mobile'];
@@ -25,7 +26,7 @@ if (isset($_POST['themnv'])) {
 		}
 	}
 	if ($demvipham==0) {
-		$themmoinv="INSERT INTO employees(employee_code,employee_name,employee_address,employee_email,employee_password,employee_mobile) VALUES('".$employee_new_code."','".$employee_new_name."','".$employee_new_address."','".$employee_new_email."','".$employee_new_password."','".$employee_new_mobile."')";
+		$themmoinv="INSERT INTO employees(employee_code,employee_name,employee_address,employee_email,employee_password,employee_mobile,employee_birthday) VALUES('".$employee_new_code."','".$employee_new_name."','".$employee_new_address."','".$employee_new_email."','".$employee_new_password."','".$employee_new_mobile."','".$employee_new_birthday."')";
 		$runthemmoi = $conn->query($themmoinv);
 		setcookie('themnvtc',' thành công', time()+10);
 		header("location: employees.php");

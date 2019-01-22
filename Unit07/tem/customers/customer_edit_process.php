@@ -6,11 +6,12 @@ if (isset($_POST['updatekh'])) {
 	$customer_update_address = $_POST['customer_update_address'];
 	$customer_update_birthday = $_POST['customer_update_birthday'];
 	$customer_update_email = $_POST['customer_update_email'];
+	$customer_update_password = $_POST['customer_update_password'];
 	$customer_update_mobile = $_POST['customer_update_mobile'];
 	$demvipham=0;
 	 
 	include_once('../../db_connect.php');
-	$updatekh="UPDATE customers SET customer_code='$customer_update_code', customer_name='$customer_update_name', customer_address= '$customer_update_address', customer_birthday='$customer_update_birthday', customer_email='$customer_update_email', customer_mobile='$customer_update_mobile'
+	$updatekh="UPDATE customers SET customer_code='$customer_update_code', customer_name='$customer_update_name', customer_address= '$customer_update_address', customer_birthday='$customer_update_birthday', customer_email='$customer_update_email', customer_mobile='$customer_update_mobile', customer_password='$customer_update_password'
 	WHERE customer_code = '".$customer_update_code."'";
 	$runupdate = $conn->query($updatekh);
 	echo "ok";

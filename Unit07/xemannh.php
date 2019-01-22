@@ -15,7 +15,7 @@
  	 	<img id="blah" src="a.jpg">
  	 	<input type="submit" name="submit" value="Submit">
  	 </form>
- 	 
+ 	  
  	 <script type="text/javascript">
         function readURL(input) {
             if (input.files && input.files[0]) {

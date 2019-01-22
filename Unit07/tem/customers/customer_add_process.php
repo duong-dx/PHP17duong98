@@ -6,6 +6,7 @@ if (isset($_POST['themkh'])) {
 	$customer_new_address = $_POST['customer_new_address'];
 	$customer_new_birthday = $_POST['customer_new_birthday'];
 	$customer_new_email = $_POST['customer_new_email'];
+	$customer_new_password = $_POST['customer_new_password'];
 	$customer_new_mobile = $_POST['customer_new_mobile'];
 	$demvipham1=0;
 	include_once('../../db_connect.php');
@@ -26,8 +27,8 @@ if (isset($_POST['themkh'])) {
 		}
 	}
 	if ($demvipham1==0) {
-		$themmoikh="INSERT INTO customers(customer_code,customer_name,customer_address,customer_birthday,customer_email,customer_mobile) VALUES('".$customer_new_code."','".$customer_new_name."','".$customer_new_address."','".
-		$customer_new_birthday."','".$customer_new_email."','".$customer_new_mobile."')";
+		$themmoikh="INSERT INTO customers(customer_code,customer_name,customer_address,customer_birthday,customer_email,customer_mobile,customer_password) VALUES('".$customer_new_code."','".$customer_new_name."','".$customer_new_address."','".
+		$customer_new_birthday."','".$customer_new_email."','".$customer_new_mobile."','".$customer_new_password."')";
 		$runthemmoi = $conn->query($themmoikh);
 		setcookie('themkhtc','Không thành công', time()+10);
 		header("location: customers.php");

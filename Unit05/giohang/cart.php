@@ -106,6 +106,7 @@ if (isset($_SESSION['cart'])) {
 						<td><?php echo number_format($product['DonGia']) ?></td>
 						<td align="right">
 							<?php echo number_format($product['DonGia']*$product['SoLuong']) ?>
+						</td>
 
 						</tr>
 

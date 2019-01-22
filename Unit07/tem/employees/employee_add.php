@@ -21,7 +21,7 @@
 			</script>
 			<?php
 		}
-		?>
+		?> 
 	<div style="width: 60%;margin: auto;">
 		<form action="employee_add_process.php" method="POST" role="form">
 		<h3 align="center">Thêm mới nhân viên</h3>
@@ -32,6 +32,10 @@
 		<div class="form-group">
 			<label for="">Tên nhân viên</label>
 			<input type="text" class="form-control" name="employee_new_name" placeholder="Tên nhân viên">
+		</div>
+		<div class="form-group">
+			<label for="">Ngày sinh nhân viên</label>
+			<input type="date" class="form-control" name="employee_new_birthday" placeholder="Ngày sinh">
 		</div>
 		<div class="form-group">
 			<label for="">Địa chỉ</label>

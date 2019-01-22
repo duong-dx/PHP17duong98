@@ -21,7 +21,7 @@
 			</script>
 			<?php
 		}
-		?>
+		?> 
 	<div style="width: 60%;margin: auto;">
 		<form action="customer_add_process.php" method="POST" role="form">
 		<h3 align="center">Thêm mới khách hàng</h3>
@@ -44,6 +44,10 @@
 		<div class="form-group">
 			<label for="">Email</label>
 			<input type="email" class="form-control" name="customer_new_email" placeholder="Địa chỉ email">
+		</div>
+		<div class="form-group">
+			<label for="">Mật khẩu</label>
+			<input type="password" class="form-control" name="customer_new_password" placeholder="Mật khẩu">
 		</div>
 		<div class="form-group">
 			<label for="">Số điện thoại khách hàng</label>

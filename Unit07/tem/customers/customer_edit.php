@@ -29,24 +29,28 @@ include_once('../../db_connect.php');
 				<input type="text" class="form-control" name="customer_update_code" value="<?php echo $customer_code; ?>" placeholder="Tên khách hàng" readonly>
 			</div>
 			<div class="form-group">
-				<label for="">Tên khách hàng</label>
-				<input type="text" class="form-control" name="customer_update_name" value="<?php echo $row2['customer_name']; ?>" placeholder="Tên khách hàng">
+				<label for="">Tên khách hàng mới</label>
+				<input type="text" class="form-control" name="customer_update_name" value="<?php echo $row2['customer_name']; ?>" placeholder="Tên khách hàng mới">
 			</div>
 			<div class="form-group">
-				<label for="">Địa chỉ</label>
-				<input type="text" class="form-control" name="customer_update_address" value="<?php echo $row2['customer_address']; ?>" placeholder="Địa chỉ">
+				<label for="">Địa chỉ mới</label>
+				<input type="text" class="form-control" name="customer_update_address" value="<?php echo $row2['customer_address']; ?>" placeholder="Địa chỉ mới">
 			</div>
 			<div class="form-group">
-				<label for="">Ngày sinh</label>
-				<input type="date" class="form-control" name="customer_update_birthday" value="<?php echo $row2['customer_birthday']; ?>" placeholder="Ngày sinh">
+				<label for="">Ngày sinh mới</label>
+				<input type="date" class="form-control" name="customer_update_birthday" value="<?php echo $row2['customer_birthday']; ?>" placeholder="Ngày sinh mới">
 			</div>
 			<div class="form-group">
-				<label for="">Email</label>
+				<label for="">Email mới</label>
 				<input type="email" class="form-control" name="customer_update_email" value="<?php echo $row2['customer_email']; ?>" placeholder="Địa chỉ email">
 			</div>
 			<div class="form-group">
-				<label for="">Số điện thoại khách hàng</label>
-				<input type="number" class="form-control" name="customer_update_mobile" value="<?php echo $row2['customer_mobile']; ?>" placeholder="Số điện thoại">
+			<label for="">Mật khẩu mới</label>
+			<input type="password" class="form-control" name="customer_update_password" value="<?php echo $row2['customer_password']; ?>"placeholder="Mật khẩu mới">
+		</div>
+			<div class="form-group">
+				<label for="">Số điện thoại mới khách hàng</label>
+				<input type="number" class="form-control" name="customer_update_mobile" value="<?php echo $row2['customer_mobile']; ?>" placeholder="Số điện thoại mới">
 			</div>
 
 

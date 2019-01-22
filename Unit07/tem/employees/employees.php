@@ -100,6 +100,7 @@ if(isset($_COOKIE['editnvtc'])){
 				<div class="container">
 					<p>Mã nhân viên : <span id="id_detail"></span></p>
 					<p>Tên nhân viên : <span id="name_detail"></span></p>
+					<p>Ngày sinh : <span id="birthday_detail"></span></p>
 					<p>Địa chỉ : <span id="address_detail"></span></p>
 					
 					<p>Email : <span id="email_detail"></span></p>
@@ -138,6 +139,7 @@ if(isset($_COOKIE['editnvtc'])){
 
 					$("#id_detail").html(response.employee_code);
 					$("#name_detail").html(response.employee_name);
+					$("#birthday_detail").html(response.employee_birthday);
 					$("#address_detail").html(response.employee_address);
 					$("#email_detail").html(response.employee_email);
 					$("#mobile_detail").html(response.employee_mobile);

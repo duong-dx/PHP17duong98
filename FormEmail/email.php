@@ -45,8 +45,9 @@
           echo "Có lỗi khi gửi mail: " . $mail->ErrorInfo;
 					return false;
         } else {
-            setcookie('guithanhcong','Gui email thanh công',time()+3);
-            header('location: index.php');
+            echo "Đã gửi thư thành công!";
+                    return true;
+            
 
         }
 	}
